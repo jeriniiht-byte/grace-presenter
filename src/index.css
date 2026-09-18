@@ -1,7 +1,49 @@
+@import "@fontsource/noto-sans/400.css";
+@import "@fontsource/noto-sans/700.css";
+@import "@fontsource/noto-sans-tamil/400.css";
+@import "@fontsource/noto-sans-tamil/700.css";
+@import "@fontsource/noto-sans-malayalam/400.css";
+@import "@fontsource/noto-sans-malayalam/700.css";
 @import "tailwindcss";
+
+/* Brand palette matched to salemagchurch.com's logo (warm gold/amber dove) */
+@theme {
+  --color-brand-50: #fbf3e3;
+  --color-brand-100: #f5e4c0;
+  --color-brand-200: #ecce8f;
+  --color-brand-300: #e0b45c;
+  --color-brand-400: #d29d3e;
+  --color-brand-500: #c9962e;
+  --color-brand-600: #b8860b;
+  --color-brand-700: #96700a;
+  --color-brand-800: #745708;
+  --color-brand-900: #4a3805;
+  --color-brand-950: #2b2003;
+}
 
 body {
   margin: 0;
-  font-family: Inter, Arial, sans-serif;
-  background: #0f172a;
+  font-family: "Noto Sans", Inter, Arial, sans-serif;
+  background: #09090b;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #52525b;
+  background-clip: content-box;
 }

@@ -12,6 +12,14 @@ dist
 dist-ssr
 *.local
 
+# Rust build output (huge, regenerated on build)
+src-tauri/target
+
+# Secrets - never commit
+.env
+.env.*
+*.key
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
